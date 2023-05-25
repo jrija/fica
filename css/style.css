@@ -1,0 +1,192 @@
+/* reset */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ font-family: Arial, Helvetica, sans-serif;
+ text-decoration: none;
+
+}
+
+/* Header */
+header {
+    background-color: aquamarine;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: o;
+    margin: 0;
+    
+}
+/* body */
+body{
+    background-color: rgb(245, 212, 140);
+    position: relative;
+    padding-bottom: 10em;
+}
+
+/* header botones */
+header nav ul li{
+    list-style: none;
+    display: inline-block;
+  gap: 50px;
+  padding-left: 30px;
+  margin: 10px;
+
+}
+
+/* texto we code it */
+main h1{
+    background-color: rgb(0, 202, 209);
+    color: aquamarine;
+    text-align: center;
+}
+
+/* ACERCA DE */
+
+main h3{
+    background-color: rgb(247, 16, 55);
+    color: aquamarine;
+    text-align: center;
+}
+
+
+.acercade{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+.texto-h2{
+    text-align: center;
+    margin: 30px 100px 30px 100px;
+}
+
+/* formulario */
+main form{
+    background-color: rgb(153, 153, 240);
+    text-align: center;
+    margin: 0;
+    padding: 50px;
+
+}
+
+
+/* Footer */
+
+footer{
+    background-color: rgb(207, 160, 252);
+    color: aquamarine;
+  display: flex;
+   align-items: center;
+   justify-content: space-between;
+   gap: 100px;
+   text-decoration: none;
+height: 100px;
+margin: 0;
+position: absolute;
+bottom: 0;
+width: 100%;
+padding: 1em;
+}
+footer div a{
+    text-decoration: none;
+    display: inline-block;
+  margin: 25px;
+}
+footer div .iglogo{
+    position: sticky;
+    width: 2px;
+    height: 2px;
+    bottom: 5px;
+    left: 0;
+    text-align: center;
+    padding: 0;
+}
+
+/* contacto */
+
+.contacto{
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* servicios main*/
+.servicios1{
+   text-align: center;
+    margin: 100px;
+    justify-content: space-around;
+    display: flex;
+
+}
+
+/* marcas main */
+.marcasmain{
+    text-align: center;
+    margin: 100px;
+    justify-content: space-around;
+    display: flex;
+}
+
+/* imagen  acerca de */
+
+.acercade2{
+    text-align: center;
+    margin: 100px;
+    justify-content: space-around;
+    display: flex;
+}
+
+/*  servicios */
+
+ main .servicios{
+    display: grid;
+    grid-template-columns:repeat(3, 33%);
+    grid-template-rows: auto;
+    grid-template-areas:
+    "serv1 serv1 serv1"
+    "serv2 serv2 serv2" 
+    "serv3 serv3 serv3";
+
+ }
+ .serv1{
+    grid-area: serv1;
+    background-color: tomato;
+    justify-content: end;
+ }
+ .serv2{
+    grid-area: serv2;
+    background-color: blue;
+  
+ }
+ .serv3{
+    grid-area: serv3;
+     background-color: red;
+ }
+.serv-2{
+  margin-left: 60%;
+}
+.serv-1, .serv-3{
+margin-left: 25%;
+}
+/* contacto */
+
+main nav div .contacto{
+    text-align: center;
+}
+@media screen and (max-width: 480px){
+    .servicios{
+        display: grid;
+        grid-template-columns: repeat(1, 6fr);
+        grid-template-rows: repeat(6, 1fr);
+        grid-template-areas:  "serv1 serv1 serv1"
+        "serv2 serv2 serv2" 
+        "serv3 serv3 serv3";
+        justify-content: center;
+        align-items: center;
+    }
+    .acercade{
+        width: 100%;
+    }
+}

@@ -24,6 +24,7 @@ body{
     background-color: rgb(245, 212, 140);
     position: relative;
     padding-bottom: 10em;
+    height: 80%;
 }
 
 /* header botones */
@@ -61,7 +62,12 @@ main h3{
     text-align: center;
     margin: 30px 100px 30px 100px;
 }
+.ImgMarketing{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
+}
 /* formulario */
 main form{
     background-color: rgb(153, 153, 240);
@@ -82,17 +88,17 @@ footer{
    justify-content: space-between;
    gap: 100px;
    text-decoration: none;
-height: 100px;
-margin: 0;
-position: absolute;
-bottom: 0;
-width: 100%;
-padding: 1em;
+    margin: 0px;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    padding: 0px;
+    height: auto;
 }
 footer div a{
     text-decoration: none;
     display: inline-block;
-  margin: 25px;
+ 
 }
 footer div .iglogo{
     position: sticky;
@@ -189,4 +195,7 @@ main nav div .contacto{
     .acercade{
         width: 100%;
     }
+}
+.VolverArriba{
+position: sticky;
 }
